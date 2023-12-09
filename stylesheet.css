@@ -1,5 +1,177 @@
-body{
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
     display: flex;
     flex-direction: column;
     line-height: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(100, 100, 245);
+    width: auto;
+    text-align: left;
+    font-size: 50px;
+    text-wrap: none;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+li{
+    margin: 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+    width: 300px;
+    float: right;
+    margin-right: 0px 0px 0px 30px;
+    height: 250px;
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: rotate(45deg);
+    /* overflow: hidden; */
+    transition: 0.4s;
+
+}
+
+/* img:not(:hover){
+    transform: rotate(0deg);
+    overflow: hidden;
+    transition: 0.4s;
+    
+    } */
+body {
+    background-image: url(assets/background-3.gif);
+    background-color: #cccc;
+    /*background-position: center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.past-work h1 {
+    border-style: solid;
+    display: flex;
+    width: 200px;
+    background-color: #cccc;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .container {
+    padding: 10px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+} */
+/* controls avatar box and such */
+.card {
+    width: 250px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2) 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: center; */
+    display: block;
+    /* background-color: #cccc; */
+    text-wrap: flex;
+    text-size-adjust: 100px;
+    
+
+}
+
+.card::after:hover {
+    transform: rotate(45deg);
+}
+/* this controls the avatar titles and position of said titles */
+.card h1 {                   
+    border-style: solid;
+    padding: 10px;
+    border-width: 1px;
+    width: 100%;
+
+}
+
+
+
+
+/* footer {
+    background-color: rgb(100, 100, 245);
+} */
+
+.past-work {
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+    position: relative;
+}
+
+
+#personal {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+
+#about-text{
+    background-color:#cccc;
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+
+}
+#About-me{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    position: static;
+    left: 45%;
+    top: 300px;
+}
+#about-section{
+    display: flex;
+    justify-content: center;
+}
+#avatar{
+    align-self: flex-end;
+    width: 250px;
+}
+#name{
+    /* flex: 1 1 auto !important; */
+    width: 250px;
+    align-self: flex-end;
+}
+#contact-me{
+    /* flex: 1 1 auto; */
+    width: 250px;
+}
+#main-title{
+    font-size: 50px;
+}
+#email{
+    background-color: #cccc;
+    width: 250px;
+}
+#github{
+    background-color: #cccc;
+    width: 250px;
+}
+#first-project{
+    background-color: #cccc;
+    width: 300px;
 }
