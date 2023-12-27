@@ -24,6 +24,7 @@ header {
 }
 li{
     margin: 10px;
+    text-decoration: none;
 }
 ul{
     display: flex;
@@ -32,9 +33,15 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
     
 }
-
+a:visited{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
 img {
     width: 300px;
     float: right;
@@ -105,9 +112,6 @@ body {
 
 }
 
-
-
-
 /* footer {
     background-color: rgb(100, 100, 245);
 } */
@@ -129,6 +133,7 @@ body {
 }
 
 #about-text{
+    align-self: center;
     background-color:#cccc;
     display: flex;
     justify-content: center;
@@ -144,6 +149,7 @@ body {
     top: 300px;
 }
 #about-section{
+    border-style: solid;
     display: flex;
     justify-content: center;
 }
@@ -159,6 +165,7 @@ body {
 #contact-me{
     /* flex: 1 1 auto; */
     width: 250px;
+    border-style: solid;
 }
 #main-title{
     font-size: 50px;
@@ -174,4 +181,15 @@ body {
 #first-project{
     background-color: #cccc;
     width: 300px;
+}
+#second-project{
+    background-color: #cccc;
+    width: 300px;
+}
+#third-project{
+    background-color: #cccc;
+    width: 300px;
+}
+#name{
+    border-style: solid;
 }
